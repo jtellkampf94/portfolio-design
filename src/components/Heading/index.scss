@@ -1,11 +1,69 @@
+@import "../../styles/_variables.scss";
+
 .heading {
   &__background {
-    background-color: #161616;
+    background-color: $primary-bg;
+    width: 100vw;
+    height: 100vh;
+    color: $primary-font-color;
+    font-family: helvetica;
+    padding: 20px;
+    position: relative;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__box-1 {
+    background: $primary-color;
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    color: #fff;
+    z-index: 2;
+    width: 400px;
+    height: 400px;
+    bottom: 40px;
+    right: 0px;
+  }
+
+  &__title {
+    &-container {
+      font-weight: 600;
+      font-size: 40px;
+      text-transform: uppercase;
+      position: relative;
+
+      display: inline-block;
+    }
+
+    &-outline {
+      position: absolute;
+      top: 0px;
+      z-index: 3;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 3px;
+      -webkit-text-stroke-color: $primary-font-color;
+    }
+  }
+
+  &__subtitle {
+    &-container {
+      font-weight: 600;
+      font-size: 16px;
+      // letter-spacing: 2px;
+      text-transform: uppercase;
+      position: relative;
+      display: inline-block;
+      // align-self: flex-end;
+    }
+
+    &-outline {
+      position: absolute;
+      // top: 0px;
+      z-index: 3;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: $primary-font-color;
+    }
   }
 }
