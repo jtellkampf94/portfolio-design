@@ -1,0 +1,22 @@
+@import "../../styles/_variables";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  padding: 0 30px;
+
+  &__nav {
+    &-container {
+      width: 250px;
+    }
+
+    display: flex;
+    justify-content: space-between;
+
+    & li a:hover {
+      font-weight: 900;
+    }
+  }
+}

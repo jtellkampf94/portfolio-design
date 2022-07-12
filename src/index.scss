@@ -1,5 +1,30 @@
+@import "./styles/_variables";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  font-family: "Roboto";
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-font-color;
+
+  &:active {
+    color: $primary-font-color;
+  }
+}
+
+button {
+  border: none;
+  outline: none;
 }

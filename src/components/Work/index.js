@@ -1,8 +1,10 @@
+import "./index.scss";
+
 const Work = () => {
   return (
-    <div>
-      <h1>Work</h1>
-    </div>
+    <section className="work" id="work">
+      <h1>work</h1>
+    </section>
   );
 };
 

@@ -1,3 +1,5 @@
+import "./index.scss";
+
 const NavBar = () => {
   return (
     <nav className="navbar">
@@ -14,21 +16,15 @@ const NavBar = () => {
           <li className="navbar__nav-item">
             <a href="#skills">Skills</a>
           </li>
-        </ul>
 
-        <ul className="navbar__nav">
           <li className="navbar__nav-item">
             <a href="#work">Work</a>
           </li>
-        </ul>
 
-        <ul className="navbar__nav">
           <li className="navbar__nav-item">
             <a href="#about">About</a>
           </li>
-        </ul>
 
-        <ul className="navbar__nav">
           <li className="navbar__nav-item">
             <a href="#contact">Contact</a>
           </li>

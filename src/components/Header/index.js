@@ -8,13 +8,13 @@ const Header = () => {
       <div className="header__image">
         <NavBar />
 
-        <h1>Full Stack Web Developer & Web Designer</h1>
-        <h2>
-          Hi, I am Jonathan Tellkampf a full stack web developer and designer
-          based in North London. I love to create beautiful websites for the
-          web.
-        </h2>
-        <button>Contact Me</button>
+        <div className="header__title">
+          <h1>Full Stack Web Developer</h1>
+          <h2>I create beautiful and functional websites for the web.</h2>
+          <a href="#contact">
+            <button>Contact Me</button>
+          </a>
+        </div>
       </div>
     </header>
   );

@@ -1,13 +1,18 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "../Header";
+import About from "../About";
+import Skills from "../Skills";
+import Work from "../Work";
+import Contact from "../Contact";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route exact path="/" element={<Header />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <Header />
+      <About />
+      <Skills />
+      <Work />
+      <Contact />
+    </>
   );
 }
 

@@ -1,8 +1,10 @@
+import "./index.scss";
+
 const Skills = () => {
   return (
-    <div>
-      <h1>Skills</h1>
-    </div>
+    <section className="skills" id="skills">
+      <h1>skills</h1>
+    </section>
   );
 };
 

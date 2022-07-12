@@ -11,7 +11,7 @@ const Contact = () => {
   const handleSubmit = () => {};
 
   return (
-    <section id="contact">
+    <section className="contact" id="contact">
       <form method="POST" className="contact__form" onSubmit={handleSubmit}>
         <div className="contact__form-field">
           <label htmlFor="name">Name</label>
