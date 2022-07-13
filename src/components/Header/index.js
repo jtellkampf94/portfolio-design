@@ -8,7 +8,7 @@ const Header = () => {
       <div className="header__image">
         <NavBar />
 
-        <div className="header__title">
+        <div className="header__title glassomorphic">
           <h1>Full Stack Web Developer</h1>
           <h2>I create beautiful and functional websites for the web.</h2>
           <a href="#contact">
