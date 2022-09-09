@@ -1,3 +1,4 @@
+import NavBar from "../NavBar";
 import Header from "../Header";
 import About from "../About";
 import Skills from "../Skills";
@@ -7,6 +8,7 @@ import Contact from "../Contact";
 function App() {
   return (
     <>
+      <NavBar />
       <Header />
       <About />
       <Skills />
