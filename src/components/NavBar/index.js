@@ -1,3 +1,4 @@
+import JTLogo from "../../assets/images/JT-logo.png";
 import "./index.scss";
 
 const NavBar = () => {
@@ -6,7 +7,9 @@ const NavBar = () => {
       <div className="navbar__container">
         <a href="#header">
           <img
-            src="abcd"
+            src={JTLogo}
+            width={50}
+            height={50}
             alt="Jonathan Tellkampf Logo"
             className="navbar__logo"
           />
