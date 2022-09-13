@@ -3,8 +3,10 @@ import "./index.scss";
 const About = () => {
   return (
     <section className="about" id="about">
-      <h1>About Me</h1>
-      <div className="about__container">
+      <div className="about__header">
+        <h1>About Me</h1>
+      </div>
+      <div className="about__container ">
         <p>
           Hi, I'm Jonathan Tellkampf, a full stack web developer based in the
           North London area. I predominantly work with technologies that use
