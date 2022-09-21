@@ -8,44 +8,50 @@ const Skills = () => {
       </div>
       <div className="skills__container">
         <div className="skills__card glassomorphic">
-          <h4>Front End</h4>
+          <h4>Languages / Programming Languages</h4>
+          <br />
 
           <ul>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
             <li>HTML</li>
             <li>CSS</li>
             <li>SCSS</li>
-            <li>JavaScript</li>
-            <li>TypeScript</li>
+            <li>SQL</li>
+            <li>Bash</li>
+          </ul>
+        </div>
+
+        <div className="skills__card glassomorphic">
+          <h4>Technologies, Libraries and Frameworks</h4>
+          <br />
+
+          <ul>
             <li>React</li>
             <li>Redux</li>
-            <li>Apollo Client</li>
-            <li>NextJS</li>
-          </ul>
-        </div>
-
-        <div className="skills__card glassomorphic">
-          <h4>Back End</h4>
-
-          <ul>
-            <li>NodeJS</li>
-            <li>ExpressJS</li>
-            <li>Apollo Server</li>
-            <li>AWS S3</li>
+            <li>Next.js</li>
+            <li>Node.js</li>
             <li>MongoDB</li>
             <li>PostgreSQL</li>
-            <li>Redux</li>
+            <li>Redis</li>
+            <li>Apollo Client and Server</li>
+            <li>Express JS</li>
+            <li>Mongoose</li>
+            <li>TypeORM</li>
+            <li>AWS SDK</li>
           </ul>
         </div>
 
         <div className="skills__card glassomorphic">
-          <h4>Other</h4>
+          <h4>Tools</h4>
+          <br />
 
           <ul>
-            <li>GIT</li>
-            <li>Docker</li>
-            <li>Docker-Compose</li>
-            <li>Linux</li>
-            <li>CMD / Powershell</li>
+            <li>VS Code</li>
+            <li>Git and GitHub</li>
+            <li>Chrome DevTools</li>
+            <li>Docker and Docker Compose</li>
+            <li>AWS EC2, IAM and S3</li>
           </ul>
         </div>
       </div>
