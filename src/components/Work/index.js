@@ -3,7 +3,9 @@ import "./index.scss";
 const Work = () => {
   return (
     <section className="work" id="work">
-      <h1>work</h1>
+      <div className="work__heading">
+        <h1>work</h1>
+      </div>
       <div className="work__card">
         <div className="work__image"></div>
         <div className="work__description">
