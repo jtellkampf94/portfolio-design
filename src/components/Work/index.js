@@ -1,3 +1,4 @@
+import WorkCard from "../../containers/WorkCard";
 import "./index.scss";
 
 const Work = () => {
@@ -10,7 +11,7 @@ const Work = () => {
         <div className="work__image"></div>
         <div className="work__description">
           <h3>ChatBack</h3>
-
+          <WorkCard />
           <h4>Description</h4>
           <p>
             ChatBack is a real time messaging app where users can send text and
