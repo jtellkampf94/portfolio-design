@@ -1,5 +1,6 @@
 import WorkCard from "../../containers/WorkCard";
 import "./index.scss";
+import MovidAppImages from "../../assets/images/movid-all-screens.png";
 
 const Work = () => {
   return (
@@ -41,9 +42,9 @@ const Work = () => {
       </div>
 
       <div className="work__card">
-        <div className="work__image"></div>
         <div className="work__description">
           <h3>Movid</h3>
+          <img src={MovidAppImages} />
 
           <h4>Description</h4>
           <p>
