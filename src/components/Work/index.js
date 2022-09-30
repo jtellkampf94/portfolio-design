@@ -1,6 +1,8 @@
 import WorkCard from "../../containers/WorkCard";
 import "./index.scss";
 import MovidAppImages from "../../assets/images/movid-all-screens.png";
+import ChatbackAppImages from "../../assets/images/chatback-all-screens.png";
+import BabblerAppImages from "../../assets/images/babbler-all-screens.png";
 
 const Work = () => {
   return (
@@ -12,6 +14,8 @@ const Work = () => {
         <div className="work__image"></div>
         <div className="work__description">
           <h3>ChatBack</h3>
+          <img src={ChatbackAppImages} />
+
           <WorkCard />
           <h4>Description</h4>
           <p>
@@ -69,6 +73,7 @@ const Work = () => {
         <div className="work__image"></div>
         <div className="work__description">
           <h3>Babbler</h3>
+          <img src={BabblerAppImages} />
 
           <h4>Description</h4>
           <p>
