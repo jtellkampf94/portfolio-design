@@ -1,0 +1,11 @@
+.contact {
+  background-color: #143f7d;
+  color: white;
+  padding: 40px 0;
+  height: 100vh;
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
