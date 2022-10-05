@@ -23,6 +23,19 @@ a {
   }
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #292929;
+}
+::-webkit-scrollbar-thumb {
+  background: #808080;
+  border-radius: 100vw;
+  border: 1px solid #292929;
+}
+
 button {
   border: none;
   outline: none;
