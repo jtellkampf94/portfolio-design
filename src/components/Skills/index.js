@@ -76,34 +76,78 @@ const Skills = () => {
             <li>AWS EC2, IAM and S3</li>
           </ul>
         </div> */}
-        <div className="skills__card glassomorphic">
-          <img src={JavascriptLogo} width={60} />
-          <img src={TypescriptLogo} width={60} />
-          <img src={HtmlLogo} width={60} />
-          <img src={CssLogo} width={60} />
-          <img src={ScssLogo} width={60} />
-          <img src={BashLogo} width={60} />
-        </div>
-        <div className="skills__card glassomorphic">
-          <img src={ReactLogo} width={60} />
-          <img src={ReduxLogo} width={60} />
-          <img src={NextjsLogo} width={60} />
-          <img src={MongodbLogo} width={60} />
-          <img src={PostgresqlLogo} width={60} />
-          <img src={RedisLogo} width={60} />
-          <img src={ApolloLogo} width={60} />
-        </div>
-        <div className="skills__card glassomorphic">
-          <img src={DockerLogo} width={60} />
-          <img src={VscodeLogo} width={60} />
-          <img src={GitLogo} width={60} />
-          <img src={GithubLogo} width={60} />
-          <img src={Awsec2Logo} width={60} />
-          <img src={Awss3Logo} width={60} />
-          <img src={AwsiamLogo} width={60} />
-          <img src={ChromedevtoolsLogo} width={60} />
+        {/* <div className="skills__card glassomorphic"> */}
+        <div className="skills__imcontainer">
+          <div className="skills__image-container">
+            <img className="skills__image" src={JavascriptLogo} />
+          </div>
+          <div className="skills__image-container">
+            <img className="skills__image" src={TypescriptLogo} />
+          </div>
+          <div className="skills__image-container">
+            <img className="skills__image" src={HtmlLogo} />
+          </div>
+          <div className="skills__image-container">
+            <img className="skills__image" src={CssLogo} />
+          </div>
+          <div className="skills__image-container">
+            <img className="skills__image" src={ScssLogo} />
+          </div>
+          <div className="skills__image-container">
+            <img className="skills__image" src={BashLogo} />
+          </div>
+          {/* </div> */}
+          {/* <div className="skills__card glassomorphic"> */}
+          <div className="skills__image-container">
+            <img className="skills__image" src={ReactLogo} />
+          </div>
+          <div className="skills__image-container">
+            <img className="skills__image" src={ReduxLogo} />
+          </div>
+          <div className="skills__image-container">
+            <img className="skills__image" src={NextjsLogo} />
+          </div>
+          <div className="skills__image-container">
+            <img className="skills__image" src={MongodbLogo} />
+          </div>
+          <div className="skills__image-container">
+            <img className="skills__image" src={PostgresqlLogo} />
+          </div>
+          <div className="skills__image-container">
+            <img className="skills__image" src={RedisLogo} />
+          </div>
+          <div className="skills__image-container">
+            <img className="skills__image" src={ApolloLogo} />
+          </div>
+          {/* </div> */}
+          {/* <div className="skills__card glassomorphic"> */}
+          <div className="skills__image-container">
+            <img className="skills__image" src={DockerLogo} />
+          </div>
+          <div className="skills__image-container">
+            <img className="skills__image" src={VscodeLogo} />
+          </div>
+          <div className="skills__image-container">
+            <img className="skills__image" src={GitLogo} />
+          </div>
+          <div className="skills__image-container">
+            <img className="skills__image" src={GithubLogo} />
+          </div>
+          <div className="skills__image-container">
+            <img className="skills__image" src={Awsec2Logo} />
+          </div>
+          <div className="skills__image-container">
+            <img className="skills__image" src={Awss3Logo} />
+          </div>
+          <div className="skills__image-container">
+            <img className="skills__image" src={AwsiamLogo} />
+          </div>
+          <div className="skills__image-container">
+            <img className="skills__image" src={ChromedevtoolsLogo} />
+          </div>
         </div>
       </div>
+      {/* </div> */}
     </section>
   );
 };
