@@ -18,7 +18,6 @@ import GithubLogo from "../../assets/images/github-logo.png";
 import ChromedevtoolsLogo from "../../assets/images/chromedevtools-logo.png";
 import Awsec2Logo from "../../assets/images/awsec2-logo.png";
 import Awss3Logo from "../../assets/images/awss3-logo.png";
-import AwsiamLogo from "../../assets/images/awsiam-logo.svg";
 
 import "./index.scss";
 
@@ -29,125 +28,172 @@ const Skills = () => {
         <h1>skills</h1>
       </div>
       <div className="skills__container">
-        {/* <div className="skills__card glassomorphic">
-          <h4>Languages / Programming Languages</h4>
-          <br />
+        <div className="skills__list-container glassomorphic">
+          <div className="skills__list-header">
+            <h4>Languages / Programming Languages</h4>
+          </div>
+          <ul className="skills__list">
+            <li className="skills__list-item">
+              <div className="skills__list-item-container">
+                <img className="skills__list-item-image" src={JavascriptLogo} />
+                <div className="skills__list-item-content">JavaScript</div>
+              </div>
+            </li>
 
-          <ul>
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>SCSS</li>
-            <li>SQL</li>
-            <li>Bash</li>
+            <li className="skills__list-item">
+              <div className="skills__list-item-container">
+                <img className="skills__list-item-image" src={TypescriptLogo} />
+                <div className="skills__list-item-content">Typescript</div>
+              </div>
+            </li>
+
+            <li className="skills__list-item">
+              <div className="skills__list-item-container">
+                <img className="skills__list-item-image" src={HtmlLogo} />
+                <div className="skills__list-item-content">HTML</div>
+              </div>
+            </li>
+
+            <li className="skills__list-item">
+              <div className="skills__list-item-container">
+                <img className="skills__list-item-image" src={CssLogo} />
+                <div className="skills__list-item-content">CSS</div>
+              </div>
+            </li>
+
+            <li className="skills__list-item">
+              <div className="skills__list-item-container">
+                <img className="skills__list-item-image" src={ScssLogo} />
+                <div className="skills__list-item-content">SCSS</div>
+              </div>
+            </li>
+
+            <li className="skills__list-item">
+              <div className="skills__list-item-container">
+                <img className="skills__list-item-image" src={BashLogo} />
+                <div className="skills__list-item-content">Bash</div>
+              </div>
+            </li>
           </ul>
         </div>
 
-        <div className="skills__card glassomorphic">
-          <h4>Technologies, Libraries and Frameworks</h4>
-          <br />
+        <div className="skills__list-container glassomorphic">
+          <div className="skills__list-header">
+            <h4>Technologies, Libraries and Frameworks</h4>
+          </div>
+          <ul className="skills__list">
+            <li className="skills__list-item">
+              <div className="skills__list-item-container">
+                <img className="skills__list-item-image" src={ReactLogo} />
+                <div className="skills__list-item-content">React</div>
+              </div>
+            </li>
 
-          <ul>
-            <li>React</li>
-            <li>Redux</li>
-            <li>Next.js</li>
-            <li>Node.js</li>
-            <li>MongoDB</li>
-            <li>PostgreSQL</li>
-            <li>Redis</li>
-            <li>Apollo Client and Server</li>
-            <li>Express JS</li>
-            <li>Mongoose</li>
-            <li>TypeORM</li>
-            <li>AWS SDK</li>
+            <li className="skills__list-item">
+              <div className="skills__list-item-container">
+                <img className="skills__list-item-image" src={ReduxLogo} />
+                <div className="skills__list-item-content">Redux</div>
+              </div>
+            </li>
+
+            <li className="skills__list-item">
+              <div className="skills__list-item-container">
+                <img className="skills__list-item-image" src={ApolloLogo} />
+                <div className="skills__list-item-content">
+                  Apollo client and server
+                </div>
+              </div>
+            </li>
+
+            <li className="skills__list-item">
+              <div className="skills__list-item-container">
+                <img className="skills__list-item-image" src={NextjsLogo} />
+                <div className="skills__list-item-content">Next.js</div>
+              </div>
+            </li>
+
+            <li className="skills__list-item">
+              <div className="skills__list-item-container">
+                <img className="skills__list-item-image" src={MongodbLogo} />
+                <div className="skills__list-item-content">Mongo DB</div>
+              </div>
+            </li>
+
+            <li className="skills__list-item">
+              <div className="skills__list-item-container">
+                <img className="skills__list-item-image" src={PostgresqlLogo} />
+                <div className="skills__list-item-content">PostgreSQL</div>
+              </div>
+            </li>
+
+            <li className="skills__list-item">
+              <div className="skills__list-item-container">
+                <img className="skills__list-item-image" src={RedisLogo} />
+                <div className="skills__list-item-content">Redis</div>
+              </div>
+            </li>
           </ul>
         </div>
 
-        <div className="skills__card glassomorphic">
-          <h4>Tools</h4>
-          <br />
+        <div className="skills__list-container glassomorphic">
+          <div className="skills__list-header">
+            <h4>Tools</h4>
+          </div>
+          <ul className="skills__list">
+            <li className="skills__list-item">
+              <div className="skills__list-item-container">
+                <img className="skills__list-item-image" src={DockerLogo} />
+                <div className="skills__list-item-content">Docker</div>
+              </div>
+            </li>
 
-          <ul>
-            <li>VS Code</li>
-            <li>Git and GitHub</li>
-            <li>Chrome DevTools</li>
-            <li>Docker and Docker Compose</li>
-            <li>AWS EC2, IAM and S3</li>
+            <li className="skills__list-item">
+              <div className="skills__list-item-container">
+                <img className="skills__list-item-image" src={VscodeLogo} />
+                <div className="skills__list-item-content">VS Code</div>
+              </div>
+            </li>
+
+            <li className="skills__list-item">
+              <div className="skills__list-item-container">
+                <img className="skills__list-item-image" src={GitLogo} />
+                <div className="skills__list-item-content">Git</div>
+              </div>
+            </li>
+
+            <li className="skills__list-item">
+              <div className="skills__list-item-container">
+                <img className="skills__list-item-image" src={GithubLogo} />
+                <div className="skills__list-item-content">GitHub</div>
+              </div>
+            </li>
+
+            <li className="skills__list-item">
+              <div className="skills__list-item-container">
+                <img className="skills__list-item-image" src={Awss3Logo} />
+                <div className="skills__list-item-content">AWS S3</div>
+              </div>
+            </li>
+
+            <li className="skills__list-item">
+              <div className="skills__list-item-container">
+                <img className="skills__list-item-image" src={Awsec2Logo} />
+                <div className="skills__list-item-content">AWS EC2</div>
+              </div>
+            </li>
+
+            <li className="skills__list-item">
+              <div className="skills__list-item-container">
+                <img
+                  className="skills__list-item-image"
+                  src={ChromedevtoolsLogo}
+                />
+                <div className="skills__list-item-content">Chrome Devtools</div>
+              </div>
+            </li>
           </ul>
-        </div> */}
-        {/* <div className="skills__card glassomorphic"> */}
-        <div className="skills__imcontainer">
-          <div className="skills__image-container">
-            <img className="skills__image" src={JavascriptLogo} />
-          </div>
-          <div className="skills__image-container">
-            <img className="skills__image" src={TypescriptLogo} />
-          </div>
-          <div className="skills__image-container">
-            <img className="skills__image" src={HtmlLogo} />
-          </div>
-          <div className="skills__image-container">
-            <img className="skills__image" src={CssLogo} />
-          </div>
-          <div className="skills__image-container">
-            <img className="skills__image" src={ScssLogo} />
-          </div>
-          <div className="skills__image-container">
-            <img className="skills__image" src={BashLogo} />
-          </div>
-          {/* </div> */}
-          {/* <div className="skills__card glassomorphic"> */}
-          <div className="skills__image-container">
-            <img className="skills__image" src={ReactLogo} />
-          </div>
-          <div className="skills__image-container">
-            <img className="skills__image" src={ReduxLogo} />
-          </div>
-          <div className="skills__image-container">
-            <img className="skills__image" src={NextjsLogo} />
-          </div>
-          <div className="skills__image-container">
-            <img className="skills__image" src={MongodbLogo} />
-          </div>
-          <div className="skills__image-container">
-            <img className="skills__image" src={PostgresqlLogo} />
-          </div>
-          <div className="skills__image-container">
-            <img className="skills__image" src={RedisLogo} />
-          </div>
-          <div className="skills__image-container">
-            <img className="skills__image" src={ApolloLogo} />
-          </div>
-          {/* </div> */}
-          {/* <div className="skills__card glassomorphic"> */}
-          <div className="skills__image-container">
-            <img className="skills__image" src={DockerLogo} />
-          </div>
-          <div className="skills__image-container">
-            <img className="skills__image" src={VscodeLogo} />
-          </div>
-          <div className="skills__image-container">
-            <img className="skills__image" src={GitLogo} />
-          </div>
-          <div className="skills__image-container">
-            <img className="skills__image" src={GithubLogo} />
-          </div>
-          <div className="skills__image-container">
-            <img className="skills__image" src={Awsec2Logo} />
-          </div>
-          <div className="skills__image-container">
-            <img className="skills__image" src={Awss3Logo} />
-          </div>
-          <div className="skills__image-container">
-            <img className="skills__image" src={AwsiamLogo} />
-          </div>
-          <div className="skills__image-container">
-            <img className="skills__image" src={ChromedevtoolsLogo} />
-          </div>
         </div>
       </div>
-      {/* </div> */}
     </section>
   );
 };

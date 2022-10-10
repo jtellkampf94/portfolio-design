@@ -17,7 +17,7 @@ const Work = () => {
             <h3>ChatBack</h3>
             <img src={ChatbackAppImages} />
 
-            <WorkCard />
+            {/* <WorkCard /> */}
             <h4>Description</h4>
             <p>
               ChatBack is a real time messaging app where users can send text

@@ -1,21 +1,13 @@
 .skills {
-  background-color: rgb(36, 36, 36);
-  // background-color: #143f7d;
+  background-color: #143f7d;
   color: white;
-  padding: 40px 0;
+  padding: 20px 0;
   height: 100vh;
-
-  &__imcontainer {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
 
   &__heading {
     max-width: 1100px;
     margin: auto;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     & h1 {
       text-transform: uppercase;
     }
@@ -23,35 +15,56 @@
 
   &__container {
     max-width: 1100px;
+    height: calc(100vh - 55px);
     margin: auto;
     display: flex;
     justify-content: space-between;
   }
 
-  &__card {
-    width: 30%;
-    padding: 30px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
+  //////////////////////
 
-  &__image {
-    &-container {
-      display: flex;
-      cursor: pointer;
-      border-radius: 9999px;
-      border: 1px solid white;
-      width: 75px;
-      height: 75px;
-      justify-content: center;
-      align-items: center;
-      margin: 10px;
+  &__list {
+    &-header {
+      padding: 20px 10px;
+      background-color: #2a4365;
+      border-radius: 15px 15px 0 0;
     }
 
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
-    border-radius: 9999px;
+    &-container {
+      height: fit-content;
+      width: 30%;
+      max-height: 90%;
+    }
+
+    &-item {
+      padding: 10px;
+      margin: 10px 0;
+      background: rgba(255, 255, 255, 0.1);
+      transition: all 0.2s ease-in;
+
+      &:hover {
+        transform: scale(1.06);
+        background-color: #143f7d;
+      }
+      &-container {
+        display: flex;
+      }
+
+      &-image {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+        margin-right: 10px;
+      }
+
+      &-content {
+        display: flex;
+        align-items: center;
+      }
+
+      &:last-of-type {
+        margin-bottom: 15px;
+      }
+    }
   }
 }
