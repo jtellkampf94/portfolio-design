@@ -24,21 +24,28 @@
   //////////////////////
 
   &__list {
+    font-size: 0.9rem;
     &-header {
       padding: 20px 10px;
       background-color: #2a4365;
       border-radius: 15px 15px 0 0;
+      text-transform: uppercase;
+
+      & h4 {
+        font-weight: 400;
+        font-size: 0.9rem;
+      }
     }
 
     &-container {
       height: fit-content;
-      width: 30%;
-      max-height: 90%;
+      width: 31%;
+      max-height: 95%;
     }
 
     &-item {
-      padding: 10px;
-      margin: 10px 0;
+      padding: 8px;
+      margin: 8px 0;
       background: rgba(255, 255, 255, 0.1);
       transition: all 0.2s ease-in;
 
@@ -51,8 +58,8 @@
       }
 
       &-image {
-        width: 30px;
-        height: 30px;
+        width: 26px;
+        height: 26px;
         object-fit: contain;
         margin-right: 10px;
       }

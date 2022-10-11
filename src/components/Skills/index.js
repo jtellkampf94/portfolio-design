@@ -18,6 +18,9 @@ import GithubLogo from "../../assets/images/github-logo.png";
 import ChromedevtoolsLogo from "../../assets/images/chromedevtools-logo.png";
 import Awsec2Logo from "../../assets/images/awsec2-logo.png";
 import Awss3Logo from "../../assets/images/awss3-logo.png";
+import GraphqlLogo from "../../assets/images/graphql-logo.png";
+import NodejsLogo from "../../assets/images/nodejs-logo.png";
+import StyledComponentsLogo from "../../assets/images/styledcomponents-logo.png";
 
 import "./index.scss";
 
@@ -35,42 +38,77 @@ const Skills = () => {
           <ul className="skills__list">
             <li className="skills__list-item">
               <div className="skills__list-item-container">
-                <img className="skills__list-item-image" src={JavascriptLogo} />
+                <img
+                  className="skills__list-item-image"
+                  alt="Javascript Logo"
+                  src={JavascriptLogo}
+                />
                 <div className="skills__list-item-content">JavaScript</div>
               </div>
             </li>
 
             <li className="skills__list-item">
               <div className="skills__list-item-container">
-                <img className="skills__list-item-image" src={TypescriptLogo} />
+                <img
+                  className="skills__list-item-image"
+                  alt="Typescript Logo"
+                  src={TypescriptLogo}
+                />
                 <div className="skills__list-item-content">Typescript</div>
               </div>
             </li>
 
             <li className="skills__list-item">
               <div className="skills__list-item-container">
-                <img className="skills__list-item-image" src={HtmlLogo} />
+                <img
+                  className="skills__list-item-image"
+                  alt="HTML Logo"
+                  src={HtmlLogo}
+                />
                 <div className="skills__list-item-content">HTML</div>
               </div>
             </li>
 
             <li className="skills__list-item">
               <div className="skills__list-item-container">
-                <img className="skills__list-item-image" src={CssLogo} />
+                <img
+                  className="skills__list-item-image"
+                  alt="CSS Logo"
+                  src={CssLogo}
+                />
                 <div className="skills__list-item-content">CSS</div>
               </div>
             </li>
 
             <li className="skills__list-item">
               <div className="skills__list-item-container">
-                <img className="skills__list-item-image" src={ScssLogo} />
+                <img
+                  className="skills__list-item-image"
+                  alt="SCSS Logo"
+                  src={ScssLogo}
+                />
                 <div className="skills__list-item-content">SCSS</div>
               </div>
             </li>
 
             <li className="skills__list-item">
               <div className="skills__list-item-container">
-                <img className="skills__list-item-image" src={BashLogo} />
+                <img
+                  className="skills__list-item-image"
+                  alt="GraphQL Logo"
+                  src={GraphqlLogo}
+                />
+                <div className="skills__list-item-content">GraphQL</div>
+              </div>
+            </li>
+
+            <li className="skills__list-item">
+              <div className="skills__list-item-container">
+                <img
+                  className="skills__list-item-image"
+                  alt="Bash Logo"
+                  src={BashLogo}
+                />
                 <div className="skills__list-item-content">Bash</div>
               </div>
             </li>
@@ -84,21 +122,33 @@ const Skills = () => {
           <ul className="skills__list">
             <li className="skills__list-item">
               <div className="skills__list-item-container">
-                <img className="skills__list-item-image" src={ReactLogo} />
+                <img
+                  className="skills__list-item-image"
+                  alt="React Logo"
+                  src={ReactLogo}
+                />
                 <div className="skills__list-item-content">React</div>
               </div>
             </li>
 
             <li className="skills__list-item">
               <div className="skills__list-item-container">
-                <img className="skills__list-item-image" src={ReduxLogo} />
+                <img
+                  className="skills__list-item-image"
+                  alt="Redux Logo"
+                  src={ReduxLogo}
+                />
                 <div className="skills__list-item-content">Redux</div>
               </div>
             </li>
 
             <li className="skills__list-item">
               <div className="skills__list-item-container">
-                <img className="skills__list-item-image" src={ApolloLogo} />
+                <img
+                  className="skills__list-item-image"
+                  alt="Apollo Logo"
+                  src={ApolloLogo}
+                />
                 <div className="skills__list-item-content">
                   Apollo client and server
                 </div>
@@ -107,29 +157,69 @@ const Skills = () => {
 
             <li className="skills__list-item">
               <div className="skills__list-item-container">
-                <img className="skills__list-item-image" src={NextjsLogo} />
+                <img
+                  className="skills__list-item-image"
+                  alt="Next.js Logo"
+                  src={NextjsLogo}
+                />
                 <div className="skills__list-item-content">Next.js</div>
               </div>
             </li>
 
             <li className="skills__list-item">
               <div className="skills__list-item-container">
-                <img className="skills__list-item-image" src={MongodbLogo} />
+                <img
+                  className="skills__list-item-image"
+                  alt="Mongo DB Logo"
+                  src={MongodbLogo}
+                />
                 <div className="skills__list-item-content">Mongo DB</div>
               </div>
             </li>
 
             <li className="skills__list-item">
               <div className="skills__list-item-container">
-                <img className="skills__list-item-image" src={PostgresqlLogo} />
+                <img
+                  className="skills__list-item-image"
+                  alt="Postgresql Logo"
+                  src={PostgresqlLogo}
+                />
                 <div className="skills__list-item-content">PostgreSQL</div>
               </div>
             </li>
 
             <li className="skills__list-item">
               <div className="skills__list-item-container">
-                <img className="skills__list-item-image" src={RedisLogo} />
+                <img
+                  className="skills__list-item-image"
+                  alt="Redis Logo"
+                  src={RedisLogo}
+                />
                 <div className="skills__list-item-content">Redis</div>
+              </div>
+            </li>
+
+            <li className="skills__list-item">
+              <div className="skills__list-item-container">
+                <img
+                  className="skills__list-item-image"
+                  alt="Nodejs Logo"
+                  src={NodejsLogo}
+                />
+                <div className="skills__list-item-content">Nodejs</div>
+              </div>
+            </li>
+
+            <li className="skills__list-item">
+              <div className="skills__list-item-container">
+                <img
+                  className="skills__list-item-image"
+                  alt="Styled Components Logo"
+                  src={StyledComponentsLogo}
+                />
+                <div className="skills__list-item-content">
+                  Styled Components
+                </div>
               </div>
             </li>
           </ul>
@@ -142,42 +232,66 @@ const Skills = () => {
           <ul className="skills__list">
             <li className="skills__list-item">
               <div className="skills__list-item-container">
-                <img className="skills__list-item-image" src={DockerLogo} />
+                <img
+                  className="skills__list-item-image"
+                  alt="Docker Logo"
+                  src={DockerLogo}
+                />
                 <div className="skills__list-item-content">Docker</div>
               </div>
             </li>
 
             <li className="skills__list-item">
               <div className="skills__list-item-container">
-                <img className="skills__list-item-image" src={VscodeLogo} />
+                <img
+                  className="skills__list-item-image"
+                  alt="VS Code Logo"
+                  src={VscodeLogo}
+                />
                 <div className="skills__list-item-content">VS Code</div>
               </div>
             </li>
 
             <li className="skills__list-item">
               <div className="skills__list-item-container">
-                <img className="skills__list-item-image" src={GitLogo} />
+                <img
+                  className="skills__list-item-image"
+                  alt="Git Logo"
+                  src={GitLogo}
+                />
                 <div className="skills__list-item-content">Git</div>
               </div>
             </li>
 
             <li className="skills__list-item">
               <div className="skills__list-item-container">
-                <img className="skills__list-item-image" src={GithubLogo} />
+                <img
+                  className="skills__list-item-image"
+                  alt="GitHub Logo"
+                  src={GithubLogo}
+                />
                 <div className="skills__list-item-content">GitHub</div>
               </div>
             </li>
 
             <li className="skills__list-item">
               <div className="skills__list-item-container">
-                <img className="skills__list-item-image" src={Awss3Logo} />
+                <img
+                  className="skills__list-item-image"
+                  alt="AS S3 Logo"
+                  src={Awss3Logo}
+                />
                 <div className="skills__list-item-content">AWS S3</div>
               </div>
             </li>
 
             <li className="skills__list-item">
               <div className="skills__list-item-container">
-                <img className="skills__list-item-image" src={Awsec2Logo} />
+                <img
+                  className="skills__list-item-image"
+                  alt="AWS EC2 Logo"
+                  src={Awsec2Logo}
+                />
                 <div className="skills__list-item-content">AWS EC2</div>
               </div>
             </li>
@@ -187,6 +301,7 @@ const Skills = () => {
                 <img
                   className="skills__list-item-image"
                   src={ChromedevtoolsLogo}
+                  alt="Chrome Devtools Logo"
                 />
                 <div className="skills__list-item-content">Chrome Devtools</div>
               </div>
