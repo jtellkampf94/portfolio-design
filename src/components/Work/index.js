@@ -1,11 +1,11 @@
-import WorkCard from "../../containers/WorkCard";
+// import WorkCard from "../../containers/WorkCard";
 import "./index.scss";
 import MovidAppImages from "../../assets/images/movid-all-screens.png";
 import ChatbackAppImages from "../../assets/images/chatback-all-screens.png";
 import BabblerAppImages from "../../assets/images/babbler-all-screens.png";
 import TypescriptLogo from "../../assets/images/typescript-logo.png";
 import JavascriptLogo from "../../assets/images/javascript-logo.png";
-import CssLogo from "../../assets/images/css-logo.png";
+import ExpressLogo from "../../assets/images/express-logo.png";
 import ScssLogo from "../../assets/images/scss-logo.png";
 import ReactLogo from "../../assets/images/react-logo.png";
 import ReduxLogo from "../../assets/images/redux-logo.png";
@@ -29,7 +29,11 @@ const Work = () => {
       <div className="work__container">
         <div className="work__card">
           <div className="work__card-image-container">
-            <img className="work__card-image" src={ChatbackAppImages} />
+            <img
+              className="work__card-image"
+              alt="ChatBack App Mock ups"
+              src={ChatbackAppImages}
+            />
           </div>
           <div className="work__card-icon-container">
             <img
@@ -51,7 +55,7 @@ const Work = () => {
             <img
               className="work__card-icon"
               src={GraphqlLogo}
-              alt="React Logo"
+              alt="Graphql Logo"
             />
             <img
               className="work__card-icon"
@@ -143,54 +147,165 @@ const Work = () => {
         </div>
 
         <div className="work__card">
-          <div className="work__description">
+          <div className="work__card-image-container">
+            <img
+              className="work__card-image"
+              alt="Movid App Mock ups"
+              src={MovidAppImages}
+            />
+          </div>
+
+          <div className="work__card-icon-container">
+            <img
+              className="work__card-icon"
+              src={TypescriptLogo}
+              alt="Typescript Logo"
+            />
+            <img className="work__card-icon" src={ReactLogo} alt="React Logo" />
+            <img className="work__card-icon" src={ScssLogo} alt="SCSS Logo" />
+            <img className="work__card-icon" src={ReduxLogo} alt="Redux Logo" />
+          </div>
+
+          <div className="work__card-header">
             <h3>Movid</h3>
-            <img src={MovidAppImages} />
+            <h4>Creator and Software developer</h4>
+          </div>
 
+          <div className="work__card-description">
             <h4>Description</h4>
-            <p>
-              The Movid web app shows users information of any movie or TV show
-              on the movie database API, including the plot, cast and crew,
-              release date, critics reviews, average rating and many more. It
-              allows users to create an account, rate movies or tv shows, create
-              watchlists and advanced search for titles.
-            </p>
-
-            <h4>Technologies Used</h4>
             <ul>
-              <li>React (CRA TypeScript) for the The UI</li>
-              <li>Redux and Redux-Thunk for state management</li>
-              <li>SCSS for responsive styles</li>
-              <li>The Movie Database API as data source</li>
+              <li>
+                {" "}
+                The Movid web app shows users information of any movie or TV
+                show on the movie database API, including the plot, cast and
+                crew, release date, critics reviews, average rating and many
+                more
+              </li>
+              <li>
+                The app allows users to create an account through the movie
+                database API (uses third party authentication), and rate movies
+                or tv shows. Users can also create watchlists and favourite
+                titles to view on account profile.
+              </li>
+              <li>
+                Users can advance search for titles, actors, release dates,
+                genres and / or voting average.
+              </li>
+              <li>
+                The app is written in Typescript and the UI is built using React
+              </li>
+              <li>
+                The app uses Redux for state management and is styled
+                responsively using SCSS
+              </li>
+              <li>
+                The Movie Database API is used as the data source of the app and
+                it is deployed with netlify
+              </li>
             </ul>
+          </div>
+
+          <div className="work__card-button-container">
+            <a href="https://github.com/jtellkampf94/movid" target="_blank">
+              <button>Code</button>
+            </a>
+            <a href="https://jtellkampf94movid.netlify.app/" target="_blank">
+              <button>Website</button>
+            </a>
           </div>
         </div>
 
         <div className="work__card">
-          <div className="work__image"></div>
-          <div className="work__description">
+          <div className="work__card-image-container">
+            <img
+              className="work__card-image"
+              alt="Babbler App mock ups"
+              src={BabblerAppImages}
+            />
+          </div>
+          <div className="work__card-icon-container">
+            <img
+              className="work__card-icon"
+              src={JavascriptLogo}
+              alt="Javascript Logo"
+            />
+            <img className="work__card-icon" src={ReactLogo} alt="React Logo" />
+            <img className="work__card-icon" src={ReduxLogo} alt="Redux Logo" />
+            <img
+              className="work__card-icon"
+              src={StyledComponentsLogo}
+              alt="Styled Components Logo"
+            />
+            <img
+              className="work__card-icon"
+              src={NodejsLogo}
+              alt="Node js Logo"
+            />
+            <img
+              className="work__card-icon"
+              src={ExpressLogo}
+              alt="Express js Logo"
+            />
+            <img
+              className="work__card-icon"
+              src={MongodbLogo}
+              alt="Mongo DB Logo"
+            />
+            <img className="work__card-icon" src={Awss3Logo} alt="Awss3 Logo" />
+          </div>
+          <div className="work__card-header">
             <h3>Babbler</h3>
-            <img src={BabblerAppImages} />
-
+            <h4>Creator and Software developer</h4>
+          </div>
+          <div className="work__card-description">
             <h4>Description</h4>
-            <p>
-              Babbler web app allows users to create posts, follow other users,
-              comment on posts and like posts. It features login / registration
-              functionality, picture posting, and user searching.
-            </p>
-
-            <h4>Technologies Used</h4>
             <ul>
-              <li>React (CRA JavaScript) for the The UI</li>
-              <li>Redux and Redux-Saga for state management</li>
-              <li>SCSS for responsive styles</li>
               <li>
-                NodeJS for the Server (Rest API implemented with ExpressJS)
+                Babbler web app allows users to create posts, follow other
+                users, comment on posts and like posts.
               </li>
-              <li>MongoDB database</li>
-              <li>Mongoose for the database ORM</li>
-              <li>AWS S3 for image storage</li>
+              <li>
+                Users are required to register or login to use the app. The app
+                uses JSON webtoken authentication
+              </li>
+              <li>
+                Users can search for other users to follow as well as edit their
+                profile
+              </li>
+              <li>
+                The frontend uses React to build the UI and SCSS for responsive
+                styles
+              </li>
+              <li>
+                The app uses Redux and Redux-Saga for state management on the
+                frontend
+              </li>
+              <li>
+                The backend is a NodeJS Server using the Express.js framework to
+                create a REST API
+              </li>
+              <li>
+                The app stores all user and post data on a MongoDB database
+                using Mongoose ORM to map the models on the server to the
+                database
+              </li>
+              <li>
+                The app uses an AWS S3 bucket to store images which requires a
+                presigned url to do this, creating an extra layer of security
+              </li>
+              <li>The app is deployed using heroku</li>
             </ul>
+          </div>
+          <div className="work__card-button-container">
+            <a href="https://github.com/jtellkampf94/babbler" target="_blank">
+              <button>Code</button>
+            </a>
+            <a
+              href="https://jtellkampf94babbler.herokuapp.com/"
+              target="_blank"
+            >
+              <button>Website</button>
+            </a>
           </div>
         </div>
       </div>

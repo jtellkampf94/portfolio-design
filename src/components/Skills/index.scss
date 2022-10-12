@@ -1,6 +1,8 @@
+@import "../../styles/variables";
+
 .skills {
-  background-color: #143f7d;
-  color: white;
+  background-color: $secondary-blue;
+  color: $white;
   padding: 20px 0;
   height: 100vh;
 
@@ -27,7 +29,7 @@
     font-size: 0.9rem;
     &-header {
       padding: 20px 10px;
-      background-color: #2a4365;
+      background-color: $tertiary-blue;
       border-radius: 15px 15px 0 0;
       text-transform: uppercase;
 
@@ -51,7 +53,7 @@
 
       &:hover {
         transform: scale(1.06);
-        background-color: #143f7d;
+        background-color: $secondary-blue;
       }
       &-container {
         display: flex;
