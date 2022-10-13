@@ -12,7 +12,7 @@ const Contact = () => {
 
   return (
     <section className="contact" id="contact">
-      <div className="contact__header">
+      <div className="contact__heading">
         <h1>Contact</h1>
         <h2>Have a question or want to work together?</h2>
       </div>
@@ -49,7 +49,7 @@ const Contact = () => {
           name="message"
           placeholder="Message"
           value={message}
-          onChange={(e) => setMessage(e.target)}
+          onChange={(e) => setMessage(e.target.value)}
         ></textarea>
 
         <button type="submit">Send Message</button>

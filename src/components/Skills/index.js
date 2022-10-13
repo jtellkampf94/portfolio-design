@@ -21,6 +21,7 @@ import Awss3Logo from "../../assets/images/awss3-logo.png";
 import GraphqlLogo from "../../assets/images/graphql-logo.png";
 import NodejsLogo from "../../assets/images/nodejs-logo.png";
 import StyledComponentsLogo from "../../assets/images/styledcomponents-logo.png";
+import ExpressJSLogo from "../../assets/images/express-logo.png";
 
 import "./index.scss";
 
@@ -220,6 +221,17 @@ const Skills = () => {
                 <div className="skills__list-item-content">
                   Styled Components
                 </div>
+              </div>
+            </li>
+
+            <li className="skills__list-item">
+              <div className="skills__list-item-container">
+                <img
+                  className="skills__list-item-image"
+                  alt="Express.js Logo"
+                  src={ExpressJSLogo}
+                />
+                <div className="skills__list-item-content">Express.js</div>
               </div>
             </li>
           </ul>
