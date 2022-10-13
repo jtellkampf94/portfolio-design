@@ -1,5 +1,5 @@
-import { useState } from "react";
-
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import "./index.scss";
 
 const Contact = () => {
@@ -7,8 +7,32 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
+  const form = useRef();
 
-  const handleSubmit = () => {};
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_EMAIL_ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          e.target.reset();
+          setName("");
+          setEmail("");
+          setSubject("");
+          setMessage("");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
 
   return (
     <section className="contact" id="contact">
@@ -16,7 +40,7 @@ const Contact = () => {
         <h1>Contact</h1>
         <h2>Have a question or want to work together?</h2>
       </div>
-      <form method="POST" className="contact__form" onSubmit={handleSubmit}>
+      <form ref={form} className="contact__form" onSubmit={handleSubmit}>
         <div className="contact__form-sender">
           <input
             type="text"

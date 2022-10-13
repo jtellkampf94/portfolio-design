@@ -1,4 +1,3 @@
-// import WorkCard from "../../containers/WorkCard";
 import "./index.scss";
 import MovidAppImages from "../../assets/images/movid-all-screens.png";
 import ChatbackAppImages from "../../assets/images/chatback-all-screens.png";
