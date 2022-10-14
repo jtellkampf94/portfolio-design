@@ -1,7 +1,5 @@
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 
-import NavBar from "../NavBar";
-
 import "./index.scss";
 
 const Header = () => {

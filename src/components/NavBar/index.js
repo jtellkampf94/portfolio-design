@@ -1,7 +1,12 @@
+import { useState } from "react";
+import { useMediaQuery } from "react-responsive";
 import JTLogo from "../../assets/images/JT-logo.png";
 import "./index.scss";
 
 const NavBar = () => {
+  const [isActive, setIsActive] = useState(false);
+  const isSmallScreen = useMediaQuery({ query: "(max-width: 900px)" });
+
   return (
     <nav className="navbar">
       <div className="navbar__container">
@@ -34,6 +39,18 @@ const NavBar = () => {
             </li>
           </ul>
         </div>
+        {isSmallScreen && (
+          <div
+            className={`hamburger ${isActive ? "is-active" : ""}`}
+            onClick={() => {
+              setIsActive(!isActive);
+            }}
+          >
+            <span className="hamburger__line"></span>
+            <span className="hamburger__line"></span>
+            <span className="hamburger__line"></span>
+          </div>
+        )}
       </div>
     </nav>
   );

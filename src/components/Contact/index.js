@@ -1,5 +1,7 @@
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
+
+import Modal from "../Modal";
 import "./index.scss";
 
 const Contact = () => {
@@ -7,6 +9,7 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const form = useRef();
 
   const handleSubmit = (e) => {
@@ -27,6 +30,7 @@ const Contact = () => {
           setEmail("");
           setSubject("");
           setMessage("");
+          setIsModalOpen(true);
         },
         (error) => {
           console.log(error.text);
@@ -77,6 +81,12 @@ const Contact = () => {
         ></textarea>
 
         <button type="submit">Send Message</button>
+
+        {isModalOpen && (
+          <Modal open={isModalOpen} closeModal={() => setIsModalOpen(false)}>
+            Your message has successfully been sent.
+          </Modal>
+        )}
       </form>
     </section>
   );
