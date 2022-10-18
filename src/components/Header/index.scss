@@ -38,24 +38,42 @@
     margin: auto;
 
     & h5 {
-      font-size: 20px;
       color: $primary-blue;
+      font-size: 1rem;
+
+      @media only screen and (min-width: 700px) {
+        font-size: 1.25rem;
+      }
     }
 
     & h1 {
-      font-size: 65px;
       line-height: 1.4;
       text-transform: uppercase;
       font-weight: bold;
+      font-size: 1.5rem;
+
+      @media only screen and (min-width: 500px) {
+        font-size: 2rem;
+      }
+      @media only screen and (min-width: 710px) {
+        font-size: 3rem;
+      }
+      @media only screen and (min-width: 950px) {
+        font-size: 4rem;
+      }
     }
 
     & h2 {
-      font-size: 20px;
+      font-size: 1rem;
+      font-weight: 300;
+      margin-bottom: 30px;
+      @media only screen and (min-width: 700px) {
+        font-size: 1.25rem;
+      }
     }
 
     & button {
       text-transform: uppercase;
-      width: 150px;
       text-align: center;
       cursor: pointer;
       padding: 10px;
@@ -65,17 +83,17 @@
       font-weight: 900;
       background-color: $primary-blue;
       color: $primary-font-color;
+      width: 125px;
+      font-size: 0.75rem;
 
+      @media only screen and (min-width: 700px) {
+        width: 150px;
+        font-size: 0.9rem;
+      }
       &:hover {
         background-color: transparent;
         border-color: #fff;
       }
-    }
-
-    & h2 {
-      font-weight: 300;
-      margin-bottom: 30px;
-      font-size: 20px;
     }
   }
 }
