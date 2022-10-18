@@ -10,7 +10,7 @@ const NavBar = () => {
   return (
     <nav className="navbar">
       <div className="navbar__container">
-        <a href="#header">
+        <a href="#header" className="navbar__logo-container">
           <img
             src={JTLogo}
             width={50}
@@ -20,7 +20,11 @@ const NavBar = () => {
           />
         </a>
 
-        <div className="navbar__nav-container">
+        <div
+          className={`navbar__nav-container ${
+            isActive && isSmallScreen ? "is-active" : ""
+          }`}
+        >
           <ul className="navbar__nav">
             <li className="navbar__nav-item">
               <a href="#about">About Me</a>
